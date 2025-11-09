@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: alphacross-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /static/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://alphacross-ai-powered-moving-average.onrender.com
+      - key: NODE_VERSION
+        value: 18.17.0
