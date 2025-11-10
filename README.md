@@ -1,4 +1,4 @@
-AlphaCross — AI-Driven MA Crossover Analyzer
+#AlphaCross — AI-Driven MA Crossover Analyzer
 
 AlphaCross is a full-stack trading signal analyzer that uses machine learning (XGBoost) and AI insights to detect and backtest moving average crossovers on NSE 500 stocks.
 
