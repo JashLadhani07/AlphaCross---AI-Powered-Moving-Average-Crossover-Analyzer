@@ -1,4 +1,4 @@
-# AlphaCross — AI-Powered Moving Average Crossover & Market Insight Platform
+# AlphaCross: AI-Powered Moving Average Crossover & Market Insight Platform
 
 A full-stack trading analytics platform for the **NSE 500** universe. It combines EMA-crossover signal detection, an XGBoost ML predictor, a full-universe screener, a portfolio-level backtester, and a GPT-4-Turbo trading assistant — all wrapped in a React dashboard.
 
